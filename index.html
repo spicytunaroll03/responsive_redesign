@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redesigning AWAF Website</title>
+    <!-- import Javascript variables and functions -->
+    <script src="app.js" defer></script>
+    <!-- import CSS Styles -->
+    <link rel="stylesheet" href="styles.css" /> 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="assets/chevron-down.svg"/>
+    <!-- import Bootstrap Files-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!--import FontAwesome Files-->
+    <i class="fa-solid fa-link"></i>
+    <i class="fa-solid fa-caret-down"></i>
+    <!--import jQuery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+ 
+  </head>
+
+  <!-- Page Content -->
+  <body>
+    <!-- Navbar-->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3" style="background-color: #735b88;"> 
+      <div class="container">
+        <a href="#cover" class="navbar-brand" style="font-weight:bold">responsive redesign</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="#description" style="font-style:italic">selection</a>
+            <a class="nav-item nav-link" href="#observations" style="font-style:italic">observations</a>
+            <a class="nav-item nav-link" href="#wireframe-sec"style="font-style:italic">wireframes</a>
+            <a class="nav-item nav-link" href="#style-guide" style="font-style:italic">style-guide</a>
+            <a class="nav-item nav-link" href="#prototype-sec"style="font-style:italic">prototypes</a>
+            <a class="nav-item nav-link" href="#final-product-sec"style="font-style:italic">product</a>
+
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- Cover Section -->
+    <section id="cover">
+      <div class="container">
+        <div class="row" id="cover-row">
+          <div class="col-lg-6 order-2 order-lg-1" data-aos="zoom-in" data-aos-duration="1000">
+            <h id="main-title">automotive women's alliance foundation</h>
+            <h2 id="subheader"> responsive redesign </h2>
+          </div>
+          <div class="col-lg-3 order-1 order-lg-2 image-holder" data-aos="fade-up" data-aos-duration="3000">
+            <!--Logo Image-->
+            <a href="https://awafoundation.org/"> <img id="logo-item" src="assets/awaf-logo.png" alt="awaf-logo"></a>
+          </div>
+        </div>
+      </div>
+    </section>  
+    
+    <!-- Why this Site? Section-->
+    <section id="description" class="d-flex align-items-center">
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <div class="column" data-aos="fade-up" data-aos-delay="200">
+            <h id="purpose-header">
+              why this site?
+            </h>
+            <h5 id="purpose-description"> 
+              Despite the strong community and amazing opportunities that the women in this foundation provide for anyone interested/involved in the automotive industry, the website is very outdated and does not cater to younger generations, especially with their goal being to minimize the age gap of women in the automotive industry. 
+            </h5>
+            <h1 id="scroll-alert">
+              scroll to see the original website =>
+            </h1>
+
+          </div>
+            <div class="column align-items-center d-flex justify-content-center" data-aos="zoom-in" data-aos-delay="200" >
+              <div class="card bg-dark" id="orig-site-card">
+                <div class="scroll-container" id="orig-site-container">
+                  <div class="scroll-page" id="orig-site-page">
+                      <img src='assets/awaf-original.png' id="original-site"> 
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-text align-items-center d-flex justify-content-center" style="color:white"> AWAF's original site </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+
+
+
+    <!-- Problematic Observations-->
+    <section id="observations" class="observations">
+      <div class="container-fluid" data-aos="fade-up">
+        <div class="row justify-content-center align-items-center">
+          <div class="section-headers">
+            <h1> identifying usability problems </h1>
+            <h3 id="cause-effect-text">
+              cause and effect diagram
+            </h3>
+          </div>
+          <img src="assets/cause-effect.png" id="usability-problems">
+        </div>
+      </div>
+    </section>
+    <!-- Accesssibility Section -->
+    <section id="acc-sec">
+      <div class="container-fluid" data-aos="fade-up">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-4 d-flex-column text-center" data-aos="fade-right" data-aos-delay="100" id="userint">
+            <h1 id="accessibility-header">
+              findings on accessibility
+            </h1>
+          <img src="assets/access-icon.png" id="access-icon"> 
+          </div>
+          
+          <div class="col-8 d-flex-column" data-aos="fade-left" data-aos-delay="100">
+            <h3>
+              issues detected with WebAIM WAVE
+            </h3>
+
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item bg-transparent"> <p id="list-text"> 1. The images in the carousel do not have alternative text for those who cannot see an image or when the image is unavailable. </p>
+              </li>
+              <li class="list-group-item bg-transparent"> <p id="list-text">2. Not only is the small text and thin font difficult for users with low vision abilities to read, the clustered text and lack of simplicity opens up problems for website visitors with dyslexia. </p>
+              </li>
+              <li class="list-group-item bg-transparent"> <p id="list-text">3. With dull color combinations like gray backgrounds and white texts, users will be unable to read the text and identify important information or dates. </p>
+    
+              </li>
+              <li class="list-group-item bg-transparent"> <p id="list-text">4. The document language is not identified, which would help readers to read the content in the appropriate language and facilitate automatic translation of content.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    
+    <!-- Low Fidelity Wireframes Section -->
+    <section id="wireframe-sec" class="d-flex align-items-center">
+      <div class="container-fluid" data-aos="fade-up">
+        <div class="row">
+          <div class="personas-title">
+            <h1 id="lofi-title">low-fidelity wireframes</h1>
+            <h id="look-title"> scroll through my wireframes!</h>
+          </div>
+        </div>
+        <!--Two Devices Wireframe-->
+        <div class="row" id="phone-tablet-row">
+          <!--Phone Wireframe-->
+          <div class="col-3 d-flex-column" id="phone-lofi-col">
+            <div class="card bg-dark" id="phone-card">
+              <div class="scroll-container" id="phone-container">
+                <div class="scroll-page" id="phone-page">
+                    <img src='assets/phone-lofi.png' id="phone-wireframe-page"> 
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-text align-items-center d-flex justify-content-center" style="color:white"> phone </h5>
+              </div>
+            </div>
+          </div>
+          <!--Tablet Wireframe-->
+          <div class="col-4 d-flex-column" id="tablet-lofi-col">
+            <div class="card bg-dark" id="tablet-card">
+              <div class="scroll-container" id="tablet-container">
+                <div class="scroll-page" id="tablet-page">
+                    <img src='assets/tablet-lofi.png' id="tablet-wireframe-page"> 
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-text align-items-center d-flex justify-content-center" style="color:white"> tablet </h5>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!--Laptop Wireframe-->
+        <div class="row" class="laptop-row">
+          <div class="card bg-dark" id="laptop-card">
+            <div class="scroll-container" id="laptop-container">
+              <div class="scroll-page" id="laptop-page">
+                  <img src='assets/laptop-lofi.png' id="laptop-wireframe-page"> 
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-text align-items-center d-flex justify-content-center" style="color:white"> laptop </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+  <!--Style-Guide Section-->
+  <section id="style-guide">
+    <div class="container-fluid" data-aos="fade-up">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-4 d-flex-column text-center" data-aos="fade-right" data-aos-delay="100" id="userint">
+          <h1 id="style-guide-header">
+            design style guide
+          </h1>
+        </div>
+        
+        <div class="col-8 d-flex-column" data-aos="fade-left" data-aos-delay="100">
+          <h3>
+            <img src="assets/style-guide.png" id="style-guide-img">
+          </h3>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  
+
+  <!-- Hifi Prototype Section--> 
+  <section id="prototype-sec" class="d-flex align-items-center">
+    <div class="container-fluid" data-aos="fade-up">
+      <div class="row">
+        <div class="hifi-title">
+          <h1>high fidelity prototypes</h1>
+          <p style="color:#554068"> scroll through my prototypes!</p>
+        </div>
+      </div>
+      <!--Two Devices Prototype-->
+      <div class="row" id="phone-tablet-row">
+        <!--Phone Prototype-->
+        <div class="col-3 d-flex-column" id="phone-lofi-col">
+          <div class="card bg-dark" id="phone-card">
+            <div class="scroll-container" id="phone-container">
+              <div class="scroll-page" id="phone-page">
+                  <img src='assets/phone-hifi.png' id="phone-wireframe-page"> 
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-text align-items-center d-flex justify-content-center" style="color:white"> phone </h5>
+            </div>
+          </div>
+        </div>
+        <!--Tablet Prototype-->
+        <div class="col-4 d-flex-column" id="tablet-lofi-col">
+          <div class="card bg-dark" id="tablet-card">
+            <div class="scroll-container" id="tablet-container">
+              <div class="scroll-page" id="tablet-page">
+                  <img src='assets/tablet-hifi.png' id="tablet-wireframe-page"> 
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-text align-items-center d-flex justify-content-center" style="color:white"> tablet </h5>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!--Laptop Prototype-->
+      <div class="row" class="laptop-row">
+        <div class="card bg-dark" id="laptop-card">
+          <div class="scroll-container" id="laptop-container">
+            <div class="scroll-page" id="laptop-page">
+                <img src='assets/laptop-hifi.png' id="laptop-wireframe-page"> 
+            </div>
+          </div>
+          <div class="card-body">
+            <h5 class="card-text align-items-center d-flex justify-content-center" style="color:white"> laptop </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Final Product Section-->
+  <section id="final-product-sec" class="d-flex align-items-center">
+    <div class="container-fluid" data-aos="fade-up">
+      <div class="row">
+        <div class="col-4">
+            <h2 id="final-text">my final redesign!</h2>
+            <h2 id="click-text" style="font-style:italic; color:rgb(212, 190, 218);">click image to browse =></h2>
+        </div>
+        <div class="col-6 image-holder">
+          <div class="card bg-dark" id="final_card">
+            <a href="https://spicytunaroll03.github.io/awaf_redesign/"> <img src="assets/final_prod.png" id="final_product"></a>
+          </div>
+        </div>
+    </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Scroll Fade -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+
+</html>
